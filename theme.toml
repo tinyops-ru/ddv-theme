@@ -1,0 +1,18 @@
+name = "DDV"
+description = "Blog theme inspered by Drew DeVault's blog"
+license = "MIT"
+homepage = "https://github.com/getzola/hyde"
+min_version = "0.4.0"
+demo = "https://ddv-theme.github.io"
+
+taxonomies = [
+    {name = "tags", rss = true},
+    {name = "categories", paginate_by = 15, rss = true},  # 5 items per page for a term
+    {name = "authors"} # Basic definition: no RSS or pagination
+]
+
+[extra]
+
+[author]
+name = "Eugene Lebedev"
+homepage = "https://tinyops.ru"
