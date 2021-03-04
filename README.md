@@ -1,5 +1,7 @@
 # Theme for Zola static site generator
 
+[demo blog](https://ddv-theme.tinyops.ru/)
+
 Inspired by [Drew DeVault's blog](https://drewdevault.com/).
 
 ![Drew DeVault's blog](screenshot.png "Drew DeVault's blog")
