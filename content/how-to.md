@@ -2,7 +2,7 @@
 title = "Markdown features"
 description = "All features of Markdown"
 date = 2021-03-01T15:00:00Z
-updated = 2021-03-03
+updated = 2021-03-04
 +++
 
 This is post about markdown features. 
@@ -15,9 +15,9 @@ This is post about markdown features.
 or
 
 1. Ordered list
-    1. С вложенной
-    2. структурой
-2. И мы можем вернуться вновь на первый уровень.
+    1. One
+    2. Two
+2. Come back to first level.
 
 # Headers (H1)
 
