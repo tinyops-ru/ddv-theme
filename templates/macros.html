@@ -1,0 +1,133 @@
+{% macro top_menu(classes, bsize, extra, rss, siteurl) %}
+<div class="pt-4 pb-3">
+    {% if extra.enable_about_blog_page %}
+    <h5 class="d-inline-block mr-3">
+        <a href="/about" class="main-page__top-menu__item">О блоге</a>
+    </h5>
+    {% endif %}
+
+    {% if extra.website %}
+    <h5 class="d-inline-block mr-3">
+        <a href="//{{extra.website}}"
+           title="{{extra.website_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.website_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.github %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://github.com/{{extra.github}}"
+           title="{{extra.github_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.github_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.twitter %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://twitter.com/{{extra.twitter}}"
+           title="{{extra.twitter_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.twitter_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.instagram %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://instagram.com/{{extra.instagram}}"
+           title="{{extra.instagram_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.instagram_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.youtube %}
+    <h5 class="d-inline-block mr-3">
+        <a href="https://youtube.com/{{extra.youtube}}"
+           title="{{extra.youtube_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.youtube_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if extra.email %}
+    <h5 class="d-inline-block mr-3">
+        <a href="mailto:{{extra.email}}"
+           title="{{extra.email_button_hint}}"
+           target="_blank"
+           class="main-page__top-menu__item">
+            {{extra.email_button_title}}
+        </a>
+    </h5>
+    {% endif %}
+
+    {% if rss %}
+    <h5 class="d-inline-block mr-3">
+        <a href="{{siteurl}}/rss.xml"
+           title="Посмотреть RSS-ленту"
+           target="_blank"
+           class="main-page__top-menu__item">
+            RSS
+        </a>
+    </h5>
+    {% endif %}
+</div>
+{% endmacro social_list %}
+
+{% macro mini_logo(classes, title, siteurl) %}
+<div id="logo" class="p-4">
+    <a href="{{siteurl}}" title="Вернуться на главную страницу">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 25 25">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+    </a>
+</div>
+{% endmacro mini_logo %}
+
+{% macro frontmatter(classes, date, word_count, read_time) %}
+<div class="frontmatter font-weight-bold">
+    <div class="d-inline-block">
+        <time class="article_time" datetime="{{date}}">{{ date | date(format="%B %d, %Y") }}</time>.
+    </div>
+
+    <div class="d-inline-block article_time"> Время чтения &mdash; {{read_time}} мин.</div>
+</div>
+{% endmacro frontmatter %}
+
+{% macro yandex_webmaster(classes, extra) %}
+    {% if extra.yandex_webmaster_verification_code %}
+        <!-- Yandex.Webmaster Verification Code -->
+        <meta name="yandex-verification" content="{{ extra.yandex_webmaster_verification_code }}" />
+    {% endif %}
+{% endmacro yandex_webmaster %}
+
+{% macro yandex_metrika(classes, extra) %}
+{% if extra.yandex_metrika_counter %}
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym({{extra.yandex_metrika_counter}}, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/{{extra.yandex_metrika_counter}}"
+                    style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+{% endif %}
+{% endmacro yandex_metrika %}

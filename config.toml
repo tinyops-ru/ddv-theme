@@ -1,0 +1,59 @@
+base_url = "https://ddv-theme.github.io"
+
+title = "DDV Blog Theme"
+
+description=""
+default_language = "en"
+
+highlight_theme = "demain"
+generate_rss = true
+rss_limit = 20
+
+compile_sass = true
+
+build_search_index = false
+
+[markdown]
+highlight_code = true
+
+[extra]
+keywords = "blog"
+
+# FAVICON
+favicon_type = "image/x-icon"
+
+# ABOUT PAGE
+enable_about_blog_page = true
+
+# LINKS
+website = "tinyops.ru"
+
+github = "tinyops-ru"
+
+twitter = "mental_foreplay"
+
+email = "your@email.com"
+
+instagram = ""
+
+bottom_text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+
+# OPEN GRAPH
+open_graph_url = "https://ddv-theme.github.io"
+open_graph_type = "blog"
+open_graph_title = "DDV Blog Theme"
+open_graph_image = ""
+
+#------------------------------------------
+# YANDEX
+#------------------------------------------
+
+# Yandex.WebMaster
+yandex_webmaster_verification_code = ""
+
+# Yandex Metrika
+yandex_metrika_counter = ""
+
+# Yandex Turbo Pages
+# https://yandex.ru/dev/turbo/
+yandex_turbo_pages = false

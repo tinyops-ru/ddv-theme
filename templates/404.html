@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block page_title %}
+<title>Страница не найдена | {{ config.title }}</title>
+{% endblock page_title %}
+
+{% block meta_tag_description %}
+<meta name="Description" content="Страница не найдена | 404">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="Страница не найдена | 404"/>
+{% endblock open_graph_description %}
+
+{% block content %}
+    <section>
+        <h2 class="mb-3">Page Not Found - 404</h2>
+
+        <ul>
+            <li>
+                <a href="/">Back to blog</a>
+            </li>
+        </ul>
+    </section>
+{% endblock content %}

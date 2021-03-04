@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- SEO -->
+  
+<title>Markdown features | DDV Blog Theme</title>
+
+
+  
+<meta name="Description" content="All features of Markdown">
+
+
+  
+  <meta name="keywords" content="blog">
+  
+
+  
+  <meta property="og:url" content="https:&#x2F;&#x2F;ddv-theme.github.io" />
+  
+
+  
+  <meta property="og:title" content="DDV Blog Theme" />
+  
+
+  
+<meta property="og:description" content="All features of Markdown"/>
+
+
+  
+  <meta property="og:type" content="blog" />
+  
+
+  
+
+  <link rel="icon" type="image&#x2F;x-icon" href="/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+  
+    
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- theme -->
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;ddv-theme.github.io/theme.css">
+
+  
+</head>
+
+<body>
+
+<h1>
+  Markdown features
+
+  <small>
+    <span class="date">01.03.2021</span> в <a href="https:&#x2F;&#x2F;ddv-theme.github.io">DDV Blog Theme</a>
+  </small>
+</h1>
+
+<section class="container">
+  
+    <p>This is post about markdown features. </p>
+<h2 id="lists">Lists</h2>
+<ul>
+<li>List</li>
+<li>Without numbers</li>
+</ul>
+<p>or</p>
+<ol>
+<li>Ordered list
+<ol>
+<li>С вложенной</li>
+<li>структурой</li>
+</ol>
+</li>
+<li>И мы можем вернуться вновь на первый уровень.</li>
+</ol>
+<h1 id="headers-h1">Headers (H1)</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<p>You can make text <em>italic</em> or <strong>bold</strong>.</p>
+<h1 id="code">Code</h1>
+<p>Example of Rust code:</p>
+<pre style="background-color:#f9f9f9;">
+<code class="language-rust" data-lang="rust"><span style="color:#111111;">
+</span><span style="color:#8e908c;">// `vst` uses macros, so we&#39;ll need to specify that we&#39;re using them!
+</span><span style="color:#111111;">#[</span><span style="color:#c82728;">macro_use</span><span style="color:#111111;">]
+</span><span style="color:#8959a8;">extern crate</span><span style="color:#111111;"> vst;
+
+</span><span style="color:#8e908c;">// We&#39;re implementing a trait `Plugin` that does all the VST-y stuff for us.
+</span><span style="color:#8959a8;">impl </span><span style="color:#111111;">Plugin </span><span style="color:#8959a8;">for </span><span style="color:#111111;">Whisper {
+    </span><span style="color:#8959a8;">fn </span><span style="color:#4271ae;">get_info</span><span style="color:#111111;">(</span><span style="color:#3e999f;">&amp;</span><span style="color:#f07219;">self</span><span style="color:#111111;">) -&gt; Info {
+        Info {
+            name: </span><span style="color:#839c00;">&quot;Whisper&quot;</span><span style="color:#111111;">.</span><span style="color:#4271ae;">to_string</span><span style="color:#111111;">()
+        }
+    }
+}
+
+</span></code></pre>
+<p>You can also specify file name that convenient for tutorials:</p>
+<div class='filename'>
+  <div>www/index.html</div>
+</div>
+<pre style="background-color:#f9f9f9;">
+<code class="language-html" data-lang="html"><span style="color:#5d9be5;">&lt;</span><span style="color:#c82728;">div class</span><span style="color:#5d9ae5;">=</span><span style="color:#839c00;">&#39;filename&#39;</span><span style="color:#5d9be5;">&gt;
+  &lt;</span><span style="color:#c82728;">div</span><span style="color:#5d9be5;">&gt;</span><span style="color:#111111;">src/lib.rs</span><span style="color:#5d9be5;">&lt;/</span><span style="color:#c82728;">div</span><span style="color:#5d9be5;">&gt;
+&lt;/</span><span style="color:#c82728;">div</span><span style="color:#5d9be5;">&gt;
+</span></code></pre><h2 id="page-separator">Page separator</h2>
+<p>How it looks:</p>
+<hr />
+<p>Syntax:</p>
+<pre style="background-color:#f9f9f9;">
+<code class="language-html" data-lang="html"><span style="color:#111111;">---
+</span></code></pre><h2 id="quotes">Quotes</h2>
+<blockquote>
+  The first principle is that you must not fool yourself and you are the easiest person to fool.<br />
+  
+  -- Richard Feynman
+  
+</blockquote>
+<h2 id="youtube">Youtube</h2>
+<p>С вставкой <code>yt(id=&quot;the_id_here&quot;)</code></p>
+<div class="youtube ">
+    <iframe src="https://www.youtube.com/embed/ogEjvM-v_-s"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"
+    >
+  </iframe>
+</div>
+<h2 id="vimeo">Vimeo</h2>
+<p><code>vm(id=&quot;id_here&quot;)</code></p>
+<div class="vimeo ">
+    <iframe src="https://player.vimeo.com/video/115189988" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+</div>
+<h2 id="urls">Urls</h2>
+<p><a href="https://tinyops.ru">Example</a></p>
+<h2 id="tables">Tables</h2>
+<p>Example:</p>
+<table><thead><tr><th>Header 1</th><th>Header 2</th></tr></thead><tbody>
+<tr><td>Content</td><td>Content</td></tr>
+<tr><td>Content</td><td>Content</td></tr>
+</tbody></table>
+<h2 id="folding-content">Folding content</h2>
+<details>
+    <summary>Title 1</summary>
+    <p>Content</p>
+</details>
+<details>
+    <summary>Title 2</summary>
+    <p>Content</p>
+</details>
+<p>Syntax:</p>
+<pre style="background-color:#f9f9f9;">
+<code class="language-html" data-lang="html"><span style="color:#5d9be5;">&lt;</span><span style="color:#c82728;">details</span><span style="color:#5d9be5;">&gt;
+    &lt;</span><span style="color:#c82728;">summary</span><span style="color:#5d9be5;">&gt;</span><span style="color:#111111;">Title 1</span><span style="color:#5d9be5;">&lt;/</span><span style="color:#c82728;">summary</span><span style="color:#5d9be5;">&gt;
+    &lt;</span><span style="color:#c82728;">p</span><span style="color:#5d9be5;">&gt;</span><span style="color:#111111;">Content 1 Content 1 Content 1 Content 1 Content 1</span><span style="color:#5d9be5;">&lt;/</span><span style="color:#c82728;">p</span><span style="color:#5d9be5;">&gt;
+&lt;/</span><span style="color:#c82728;">details</span><span style="color:#5d9be5;">&gt;
+</span></code></pre>
+  
+</section>
+
+
+
+
+
+</body>
+</html>

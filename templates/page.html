@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block page_title %}
+<title>{{ page.title }} | {{ config.title }}</title>
+{% endblock page_title %}
+
+{% block meta_tag_description %}
+<meta name="Description" content="{{ page.description }}">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="{{ page.description }}"/>
+{% endblock open_graph_description %}
+
+{% block content %}
+<h1>
+  {{ page.title }}
+
+  <small>
+    <span class="date">{{ page.date | date(format="%d.%m.%Y") }}</span> в <a href="{{config.base_url}}">{{config.title}}</a>
+  </small>
+</h1>
+
+<section class="container">
+  {% block post %}
+    {{ page.content | safe }}
+  {% endblock post %}
+</section>
+{% endblock content %}

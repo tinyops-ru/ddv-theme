@@ -1,0 +1,60 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- SEO -->
+  {% block page_title %}
+  <title>{{ config.title }}</title>
+  {% endblock page_title %}
+
+  {% block meta_tag_description %}
+  <meta name="description" content="{{ config.description }}">
+  {% endblock meta_tag_description %}
+
+  {% block meta_tag_keywords %}
+  <meta name="keywords" content="{{ config.extra.keywords }}">
+  {% endblock meta_tag_keywords %}
+
+  {% if config.extra.open_graph_url %}
+  <meta property="og:url" content="{{ config.extra.open_graph_url }}" />
+  {% endif %}
+
+  {% if config.extra.open_graph_title %}
+  <meta property="og:title" content="{{ config.extra.open_graph_title }}" />
+  {% endif %}
+
+  {% block open_graph_description %}
+  <meta property="og:description" content="{{ config.description }}" />
+  {% endblock open_graph_description %}
+
+  {% if config.extra.open_graph_type %}
+  <meta property="og:type" content="{{ config.extra.open_graph_type }}" />
+  {% endif %}
+
+  {% if config.extra.open_graph_image %}
+  <meta property="og:image" content="{{ config.extra.open_graph_image }}" />
+  {% endif %}
+
+  <link rel="icon" type="{{ config.extra.favicon_type }}" href="/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+  {{ macros::yandex_webmaster(classes="", extra=config.extra) }}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- theme -->
+  <link rel="stylesheet" href="{{ config.base_url }}/theme.css">
+
+  {% endblock head %}
+</head>
+
+<body>
+{% block content %} {% endblock content %}
+
+{{ macros::yandex_metrika(classes="", extra=config.extra) }}
+</body>
+</html>

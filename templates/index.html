@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+<main class="index">
+  <section class="article-list">
+    <h1>{{config.title}}</h1>
+
+    {% for page in paginator.pages %}
+      <article class="article">
+        <span class="date">{{ page.date | date(format="%d.%m.%Y") }}</span>
+        <a href="{{page.permalink}}">{{page.title}}</a>
+      </article>
+    {% endfor %}
+  </section>
+
+  <aside>
+    <img src="logo.png" alt="Deer" width="148" height="148">
+    <div class="text-center">
+      <a href="//{{config.extra.website}}" target="_blank">{{config.extra.website}}</a>
+      .
+      {% if config.extra.enable_about_blog_page %}
+      <a href="/about">about</a>
+      ·
+      {% endif %}
+
+      <a class="rss" href="rss.xml">rss</a>
+    </div>
+
+    <dl class="external-links">
+      {% if config.extra.github %}
+      <dt>github</dt>
+      <dd><a href="{{config.extra.github}}" target="_blank">{{config.extra.github}}</a></dd>
+      {% endif %}
+
+      {% if config.extra.email %}
+      <dt>email</dt>
+      <dd><a href="mailto:{{config.extra.email}}">{{config.extra.email}}</a></dd>
+      {% endif %}
+
+      {% if config.extra.twitter %}
+      <dt>twitter</dt>
+      <dd><a href="https://twitter.com/{{config.extra.twitter}}" target="_blank">{{config.extra.twitter}}</a></dd>
+      {% endif %}
+
+      {% if config.extra.instagram %}
+      <dt>instagram</dt>
+      <dd><a href="https://instagram.com/{{config.extra.instagram}}" target="_blank">{{config.extra.instagram}}</a></dd>
+      {% endif %}
+    </dl>
+
+    <small>
+      {{config.extra.bottom_text}}
+    </small>
+  </aside>
+</main>
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block page_title %}
+<title>Страницы с тэгом {{ term.name }} | {{ config.title }}</title>
+{% endblock page_title %}
+
+{% block meta_tag_description %}
+<meta name="Description" content="Все статьи с тэгом {{ term.name }}">
+{% endblock meta_tag_description %}
+
+{% block open_graph_description %}
+<meta property="og:description" content="Все статьи с тэгом {{ term.name }}"/>
+{% endblock open_graph_description %}
+
+{% block content %}
+<section class="container">
+    {{ macros::top_menu(classes="header_list", bsize="small", extra=config.extra, siteurl=config.base_url,rss=true) }}
+
+    <h3 class="text-dark mb-4">Все материалы с тэгом <span class="text-primary">{{ term.name }}</span></h3>
+
+    {% set tags = get_taxonomy(kind="tags") %}
+    {% set items = tags.items | filter(attribute="name", value=term.name) %}
+
+    <ul>
+        {% for page in items[0].pages %}
+            <li>
+                <h5>
+                    <a href="/{{ page.slug }}">{{ page.title }}</a>
+                </h5>
+
+                <div class="text-secondary text-small">
+                    {{ page.date | date(format="%B %d, %Y") }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+</section>
+{% endblock content %}
