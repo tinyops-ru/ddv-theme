@@ -15,3 +15,9 @@ Edit `config.toml`:
 ```toml
 theme = "ddv"
 ```
+
+#### How to build
+
+```shell
+zola build --output-dir docs
+```
