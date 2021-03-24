@@ -1,8 +1,8 @@
 +++
 title="Occam's razor"
-description = "В современной науке под бритвой Оккама обычно понимают общий принцип, утверждающий, что если существует несколько логически непротиворечивых объяснений какого-либо явления, объясняющих его одинаково хорошо, то следует, при прочих равных условиях, предпочитать самое простое из них."
+description = "Occam's razor, Ockham's razor, Ocham's razor (Latin: novacula Occami), or law of parsimony (Latin: lex parsimoniae) is the problem-solving principle that "entities should not be multiplied without necessity.."
 date = 2020-05-13T08:10:00Z
-updated = 2021-03-03
+updated = 2021-03-24
 
 [taxonomies]
 categories=["thoughts"]
