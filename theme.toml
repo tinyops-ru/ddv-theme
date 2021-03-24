@@ -1,5 +1,5 @@
 name = "DDV"
-description = "Blog theme inspered by Drew DeVault's blog"
+description = "Blog theme inspired by Drew DeVault's blog"
 license = "MIT"
 homepage = "https://github.com/tinyops-ru/ddv-theme"
 min_version = "0.4.0"
