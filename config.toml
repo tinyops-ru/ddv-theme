@@ -8,6 +8,7 @@ default_language = "en"
 highlight_theme = "demain"
 generate_rss = true
 rss_limit = 20
+generate_feed = true
 
 compile_sass = true
 

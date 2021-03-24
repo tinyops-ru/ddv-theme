@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>DDV Blog Theme</title>
+	<link href="https://ddv-theme.tinyops.ru/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://ddv-theme.tinyops.ru"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-03-24T00:00:00+00:00</updated>
+	<id>https://ddv-theme.tinyops.ru/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Markdown features</title>
+		<published>2021-03-01T15:00:00+00:00</published>
+		<updated>2021-03-04T00:00:00+00:00</updated>
+		<link href="https://ddv-theme.tinyops.ru/how-to/" type="text/html"/>
+		<id>https://ddv-theme.tinyops.ru/how-to/</id>
+		<content type="html">&lt;p&gt;This is post about markdown features. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;List&lt;&#x2F;li&gt;
+&lt;li&gt;Without numbers&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;or&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ordered list
+&lt;ol&gt;
+&lt;li&gt;One&lt;&#x2F;li&gt;
+&lt;li&gt;Two&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Come back to first level.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;headers-h1&quot;&gt;Headers (H1)&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;h2&quot;&gt;H2&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;h3&quot;&gt;H3&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;h4&quot;&gt;H4&lt;&#x2F;h4&gt;
+&lt;h5 id=&quot;h5&quot;&gt;H5&lt;&#x2F;h5&gt;
+&lt;h6 id=&quot;h6&quot;&gt;H6&lt;&#x2F;h6&gt;
+&lt;p&gt;You can make text &lt;em&gt;italic&lt;&#x2F;em&gt; or &lt;strong&gt;bold&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;code&quot;&gt;Code&lt;&#x2F;h1&gt;
+&lt;p&gt;Example of Rust code:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#f9f9f9;&quot;&gt;
+&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#111111;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8e908c;&quot;&gt;&#x2F;&#x2F; `vst` uses macros, so we&amp;#39;ll need to specify that we&amp;#39;re using them!
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;macro_use&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;extern crate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt; vst;
+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8e908c;&quot;&gt;&#x2F;&#x2F; We&amp;#39;re implementing a trait `Plugin` that does all the VST-y stuff for us.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;impl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;Plugin &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;Whisper {
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;get_info&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07219;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;) -&amp;gt; Info {
+        Info {
+            name: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#839c00;&quot;&gt;&amp;quot;Whisper&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;to_string&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;()
+        }
+    }
+}
+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can also specify file name that convenient for tutorials:&lt;&#x2F;p&gt;
+&lt;div class=&#x27;filename&#x27;&gt;
+  &lt;div&gt;www&#x2F;index.html&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;pre style=&quot;background-color:#f9f9f9;&quot;&gt;
+&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;div class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9ae5;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#839c00;&quot;&gt;&amp;#39;filename&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;src&#x2F;lib.rs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;page-separator&quot;&gt;Page separator&lt;&#x2F;h2&gt;
+&lt;p&gt;How it looks:&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Syntax:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#f9f9f9;&quot;&gt;
+&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#111111;&quot;&gt;---
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+  The first principle is that you must not fool yourself and you are the easiest person to fool.&lt;br &#x2F;&gt;
+  
+  -- Richard Feynman
+  
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;youtube&quot;&gt;Youtube&lt;&#x2F;h2&gt;
+&lt;p&gt;С вставкой &lt;code&gt;yt(id=&amp;quot;the_id_here&amp;quot;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;youtube &quot;&gt;
+    &lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;ogEjvM-v_-s&quot;
+    webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder=&quot;0&quot;
+    &gt;
+  &lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;vimeo&quot;&gt;Vimeo&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;vm(id=&amp;quot;id_here&amp;quot;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;vimeo &quot;&gt;
+    &lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;115189988&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;urls&quot;&gt;Urls&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tinyops.ru&quot;&gt;Example&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;&#x2F;h2&gt;
+&lt;p&gt;Example:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Header 1&lt;&#x2F;th&gt;&lt;th&gt;Header 2&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Content&lt;&#x2F;td&gt;&lt;td&gt;Content&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Content&lt;&#x2F;td&gt;&lt;td&gt;Content&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;folding-content&quot;&gt;Folding content&lt;&#x2F;h2&gt;
+&lt;details&gt;
+    &lt;summary&gt;Title 1&lt;&#x2F;summary&gt;
+    &lt;p&gt;Content&lt;&#x2F;p&gt;
+&lt;&#x2F;details&gt;
+&lt;details&gt;
+    &lt;summary&gt;Title 2&lt;&#x2F;summary&gt;
+    &lt;p&gt;Content&lt;&#x2F;p&gt;
+&lt;&#x2F;details&gt;
+&lt;p&gt;Syntax:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#f9f9f9;&quot;&gt;
+&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;details&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+    &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;summary&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;Title 1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;summary&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+    &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#111111;&quot;&gt;Content 1 Content 1 Content 1 Content 1 Content 1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;p&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82728;&quot;&gt;details&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5d9be5;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Occam&#x27;s razor</title>
+		<published>2020-05-13T08:10:00+00:00</published>
+		<updated>2021-03-24T00:00:00+00:00</updated>
+		<link href="https://ddv-theme.tinyops.ru/modern-meaning-of-ockham-blade/" type="text/html"/>
+		<id>https://ddv-theme.tinyops.ru/modern-meaning-of-ockham-blade/</id>
+		<content type="html">&lt;p&gt;Occam&#x27;s razor, Ockham&#x27;s razor, Ocham&#x27;s razor (Latin: novacula Occami), or law of parsimony (Latin: lex parsimoniae) is the problem-solving principle that &amp;quot;entities should not be multiplied without necessity&amp;quot;, or more simply, the simplest explanation is usually the right one. The idea is attributed to English Franciscan friar William of Ockham (c. 1287–1347), a scholastic philosopher and theologian who used a preference for simplicity to defend the idea of divine miracles. This philosophical razor advocates that when presented with competing hypotheses about the same prediction, one should select the solution with the fewest assumptions, and that this is not meant to be a way of choosing between hypotheses that make different predictions.&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, in science, Occam&#x27;s razor is used as an abductive heuristic in the development of theoretical models rather than as a rigorous arbiter between candidate models. In the scientific method, Occam&#x27;s razor is not considered an irrefutable principle of logic or a scientific result; the preference for simplicity in the scientific method is based on the falsifiability criterion. For each accepted explanation of a phenomenon, there may be an extremely large, perhaps even incomprehensible, number of possible and more complex alternatives. Since failing explanations can always be burdened with ad hoc hypotheses to prevent them from being falsified, simpler theories are preferable to more complex ones because they are more testable.&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Occam%27s_razor&quot;&gt;Wikipedia&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
