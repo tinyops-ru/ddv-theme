@@ -1,6 +1,6 @@
 +++
 title="Occam's razor"
-description = "Occam's razor, Ockham's razor, Ocham's razor (Latin: novacula Occami), or law of parsimony (Latin: lex parsimoniae) is the problem-solving principle that "entities should not be multiplied without necessity.."
+description = "Occam's razor, Ockham's razor, Ocham's razor (Latin: novacula Occami), or law of parsimony (Latin: lex parsimoniae) is the problem-solving principle that 'entities should not be multiplied without necessity.."
 date = 2020-05-13T08:10:00Z
 updated = 2021-03-24
 
